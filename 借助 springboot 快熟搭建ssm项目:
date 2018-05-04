@@ -1,0 +1,4 @@
+借助 springboot 快熟搭建ssm项目:
+ 一  https://start.spring.io/  进入官网    选择Search for dependencies (选择自己想要的依赖 即可)
+ 
+ 点击generator project  按钮  ok  项目搭建完成...
