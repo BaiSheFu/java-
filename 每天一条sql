@@ -12,4 +12,10 @@ INSERT INTO test VALUES('张三','语文',81),
 ('王五','数学',82);
 
 --请用一条Sql语句查处分数大于80的学生
+思路1：按姓名分组   查出分数最小的 都大于80 的学生  就是了。。。完美！！
 SELECT name,MIN(fenshu) from test GROUP BY  name HAVING MIN(fenshu)>80;
+
+思路2：分数小于=80 的人找出来  然后  把不在个范围的人找出来  就是 。。。
+ SELECT DISTINCT name FROM test WHERE name NOT IN(select DISTINCT name FROM test WHERE fenshu <=80)
+ 
+思路3：
